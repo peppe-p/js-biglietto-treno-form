@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Biglietto del treno V2</title>
+</head>
+
+<body>
+    <div class="compile_form d_flex f_col align_center">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <form class="d_flex f_col align_center" action="" method="get">
+            <div class="input_div d_flex justify_center">
+                <div class="user_div">
+                    <label for="username">Nome e Cognome</label>
+                    <input type="text" name="username" id="username" value="" placeholder="Inserisci i tuoi dati">
+                </div>
+                <div class="km_div">
+                    <label for="km">Km da percorrere</label>
+                    <input type="text" name="km" id="km" value="" placeholder="Inserisci i Km">
+                </div>
+                <div class="eta_div">
+                    <label for="eta">Fascia d'età</label>
+                    <select id="eta" name="eta">
+                        <option value="anziano">Anziano (65+)</option>
+                        <option value="adulto">Adulto (18-64)</option>
+                        <option value="minorenne">Minorenne (-18)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button_div">
+                <input class="bttn" type="button" value="Genera">
+                <input class="bttn" type="button" value="Annulla">
+            </div>
+        </form>
+    </div>
+
+    <div class="biglietto">
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
