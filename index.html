@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Biglietto del treno V2</title>
 </head>
 
@@ -40,11 +40,40 @@
         </form>
     </div>
 
-    <div class="biglietto">
-
+    <div class="biglietto_div">
+        <h1>IL TUO BIGLIETTO</h1>
+        <div class="biglietto">
+            <h3>DETTAGLI PASSEGGERO</h3>
+            <div class="details_div d_flex">
+                <div class="bollo d_flex f_col justify_center">
+                    <h4>NOME PASSEGGERO</h4>
+                    <h4 id="nomepasseggero">/</h4>
+                </div>
+                <div class="details d_flex">
+                    <div class="sconto_div grid">
+                        <h4 class="h4_title">Sconto</h4>
+                        <h4 id="sconto">/</h4>
+                    </div>
+                    <div class="wagon_div grid">
+                        <h4 class="h4_title">Carrozza</h4>
+                        <h4 id="wagon">/</h4>
+                    </div>
+                    <div class="nwagon_div grid">
+                        <h4 class="h4_title">Codice CP</h4>
+                        <h4 id="n_wagon">/</h4>
+                    </div>
+                    <div class="prize_div grid">
+                        <h4 class="h4_title">Costo biglietto</h4>
+                        <h4 id="prize">/</h4>
+                    </div>
+                </div>
+                <div class="barcode_div">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

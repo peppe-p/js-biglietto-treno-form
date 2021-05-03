@@ -25,6 +25,8 @@ body {
     flex-direction: column;
 }
 
+
+
 /* #################### */
 /* ##### FORM CSS ##### */
 form {
@@ -68,4 +70,58 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+
+
+
+/* ######################### */
+/* ##### BIGLIETTO CSS ##### */
+.biglietto_div {
+    margin: 50px 0px;
+}
+.biglietto {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: auto;
+}
+
+.details_div {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.barcode_div {
+    background-image: url("../img/barcode.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 10px;
+    height: auto;
+    width: 80px;
+    border-left: 2px dotted gray;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.bollo {
+    background-image: url("../img/bollo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+.h4_title {
+    text-decoration: underline;
+    font-weight: 700;
 }
