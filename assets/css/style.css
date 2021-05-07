@@ -61,6 +61,7 @@ select {
 }
 .bttn:hover {
     border: 2px solid #b91450;
+    cursor: pointer;
 }
 
 .input_div > div {

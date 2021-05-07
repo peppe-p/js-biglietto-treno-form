@@ -6,19 +6,23 @@ Numero carrozza
 Prezzo calcolato
 Categoria selezionata dall'utente */
 var chara = ["!", "?", ".", ",", ":", ";", "*", "*", "+", "-", "/", "'", "[", "]", "(", ")", "[", "]", "#", "_", "<", ">", "€", "£", "$", "%", "&",];
-function loadTicket() {
-    var username = document.getElementById("username").value;
-    var km = Number(document.getElementById("km").value);
-    var prezzo = 0.21;
-    var prezzoXkm = (prezzo * km);
-    var prezzofinale = 0;
 
-    var pass_name = document.getElementById("nomepasseggero");
-    var sconto = document.getElementById("sconto");
-    var wagon = document.getElementById("wagon");
-    var n_wagon = document.getElementById("n_wagon");
-    var prize = document.getElementById("prize");
-    var eta_selected = document.getElementById("eta");
+//Variabili form top
+var username = document.getElementById("username").value;
+var km = Number(document.getElementById("km").value);
+var eta_selected = document.getElementById("eta");
+var prezzo = 0.21;
+var prezzoXkm = (prezzo * km);
+var prezzofinale = 0;
+
+//Variabili biglietto bottom
+var pass_name = document.getElementById("nomepasseggero");
+var sconto = document.getElementById("sconto");
+var wagon = document.getElementById("wagon");
+var n_wagon = document.getElementById("n_wagon");
+var prize = document.getElementById("prize");
+
+function loadTicket() {
     if (isNaN(username) == false || username.includes(chara)) {
         alert("Inserisci dei dati anagrafici corretti!");
     } else {
@@ -44,9 +48,20 @@ function loadTicket() {
     }
 }
 
+function resetBtn() {
+    document.getElementById("username").value = null;
+    document.getElementById("km").value = null;
+    document.getElementById("eta").value = null;
+    pass_name.innerHTML = "/";
+    sconto.innerHTML = "/";
+    wagon.innerHTML = "/";
+    n_wagon.innerHTML = "/";
+    prize.innerHTML = "/";
+
+}
+
+
 function genCode(min, max) {
     var n = parseInt((Math.random() * (max - min + 1)) + min);
     return n;
 }
-
-//DEVO FARE IL CALCOLO PER I PREZZI E LA GENERAZIONE DEI NUMERI
